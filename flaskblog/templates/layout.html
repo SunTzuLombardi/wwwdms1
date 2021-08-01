@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+
+    {% if title %}
+    <title>Daniel M Smith- {{ title }}</title>
+    {% else %}
+    <title>Daniel M Smith</title>
+    {% endif %}
+</head>
+<body>
+<div id="__next">
+    <div class="wrapper">
+        <div class="Sidebar_sidebar">
+                    <a href="/#intro">
+                <img src="../static/images/default.jpg" class="Sidebar_profile-image">
+                    </a>
+
+            <hr class="Sidebar_sidebar-hr">
+            <ul class="Sidebar_center-list">
+                <li class="Sidebar_list-nav-item">
+                    <a href="/#about">About</a>
+                </li>
+                <li class="Sidebar_list-nav-item">
+                    <a href="/#projects">Projects</a>
+                </li>
+                <li class="Sidebar_list-nav-item">
+                    <a href="/#skills">Skills</a>
+                </li>
+            </ul>
+            <a class="Generic_button" href="/DanielMSmith_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            <div class="Sidebar_social-media-container">
+                <a href="https://github.com/SunTzuLombardi" target="_blank" rel="noopener noreferrer">
+                    <img class="Sidebar_social-media-icon" src="../static/images/github.svg">
+                </a>
+                <a href="https://www.linkedin.com/in/danielmsmith-864217155/" target="_blank"
+                   rel="noopener noreferrer">
+                    <img class="Sidebar_social-media-icon" src="../static/images/linkedin.svg">
+                </a>
+                <a href="mailto:danielmsmith1@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <img class="Sidebar_social-media-icon" src="../static/images/email.svg">
+                </a>
+            </div>
+        </div>
+
+        <main role="main" class="Generic_main-container">
+            <div class="Generic_main-content">
+                    <p id="intro">Hi there, my name is...</p>
+                    <h1 class="MainContent_hero-text">Daniel M. Smith</h1>
+                    <hr class="Generic_block-hr">
+                    <p class="MainContent_intro-text">I’m a Data Scientist who loves data and building models to provide insight.</p>
+                    <h2 class="MainContent_section-header" id="about">About Me</h2>
+                    <p class="MainContent_description-text">I am an avid fan of technology pursuing a career in machine
+                        learning.
+                    </p>
+                    <p class="MainContent_description-text">My goal is to build technology that people find useful.</p>
+                    <br>
+                    <hr class="Generic_light-hr">
+                    <h2 class="MainContent_section-header" id="projects">Projects</h2>
+                    <p class="MainContent_description-text">Personal projects I've built over the years</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="Project_project-wrapper">
+                                    <div class="Project_default-container">
+                                        <img src="/images/silicon-info.png" class="Project_project-icon undefined">
+                                    </div>
+                                    <div class="Project_overlay-container">
+                                        <div>
+                                            <p class="Project_project-title">Silicon Info</p>
+                                            <p class="Project_project-description">Mac menu bar application developed to
+                                                assist users during the transition to Apple Silicon. Informs the user
+                                                whether an application is running natively on ARM or translated through
+                                                Rosetta 2. Published on the Mac App Store with 20,000+ downloads.</p>
+                                            <br>
+                                            <span class="Project_link-container">
+            <a class="Project_project-link" href="">App Store</a> •
+                <a class="Project_project-link" href="">GitHub</a> •
+                <a class="Project_project-link" href="/silicon-info">More Info</a>
+            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="Project_project-wrapper">
+                                    <div class="Project_default-container">
+                                        <img src="/images/stats-home.png"
+                                             class="Project_project-icon Project_project-icon-shadow">
+                                    </div>
+                                    <div class="Project_overlay-container">
+                                        <div>
+                                            <p class="Project_project-title">MLB QuickStats</p>
+                                            <p class="Project_project-description">Full stack web application built with
+                                                Next.js, Elasticsearch, and AWS (API Gateway, Lambda). The app allows
+                                                the user to search and graphically view the historical batting records
+                                                of Major League Baseball players. Deployed using Vercel.</p>
+                                            <br>
+                                            <span class="Project_link-container">
+            <a class="Project_project-link" href="https://mlb-quickstats.vercel.app/">Live Site</a> • <a
+                                                    class="Project_project-link" href="">GitHub</a>
+            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="Project_project-wrapper">
+                                    <div class="Project_default-container">
+                                        <img src="/images/watchlist-home.png"
+                                             class="Project_project-icon Project_project-icon-shadow">
+                                    </div>
+                                    <div class="Project_overlay-container">
+                                        <div>
+                                            <p class="Project_project-title">Movie Watchlist</p>
+                                            <p class="Project_project-description">Full stack web application built
+                                                using Python, Flask, and MySQL. Allows the user to create custom lists
+                                                of films. Movie information obtained from The Movie Database API. This
+                                                application was deployed in many different ways over the years, today it
+                                                is being served via Heroku.</p>
+                                            <br>
+                                            <span class="Project_link-container">
+            <a class="Project_project-link" href="https://movierec.danielmsmith1.com/">Live Site</a> •
+                <a class="Project_project-link" href="">GitHub</a>
+            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <hr class="Generic_light-hr">
+                    <h2 class="MainContent_section-header" id="skills">Skills</h2>
+                    <div class="MainContent_skills-row">
+                        <div class="MainContent_skill-container">
+                            <img src="../static/images/python.svg" class="MainContent_skills-img">
+                            <p class="MainContent_sub-text">Python</p>
+                        </div>
+                        <div class="MainContent_skill-container">
+                            <img src="../static/images/flask.png" class="MainContent_skills-img">
+                            <p class="MainContent_sub-text">Flask</p>
+                        </div>
+                        <div class="MainContent_skill-container">
+                            <img src="../static/images/docker.png" class="MainContent_skills-img">
+                            <p class="MainContent_sub-text">Docker</p>
+                        </div>
+                        <div class="MainContent_skill-container">
+                            <img src="../static/images/html5.png" class="MainContent_skills-img">
+                            <p class="MainContent_sub-text">HTML</p>
+                        </div>
+                        <div class="MainContent_skill-container">
+                            <img src="../static/images/css3.png" class="MainContent_skills-img">
+                            <p class="MainContent_sub-text">CSS</p>
+                        </div>
+                        <div class="MainContent_skill-container">
+                            <img src="../static/images/aws-dark.jpg" class="MainContent_skills-img">
+                            <p class="MainContent_sub-text">AWS</p>
+                        </div>
+                        <div class="MainContent_skill-container">
+                            <img src="../static/images/git.png" class="MainContent_skills-img">
+                            <p class="MainContent_sub-text">Git</p>
+                        </div>
+                        <div class="MainContent_skill-container">
+                            <img src="../static/images/sql.png" class="MainContent_skills-img">
+                            <p class="MainContent_sub-text">SQL</p>
+                        </div>
+                        <div class="MainContent_skill-container">
+                            <img src="../static/images/nosql.png" class="MainContent_skills-img">
+                            <p class="MainContent_sub-text">NoSQL</p>
+                        </div>
+                        <div class="MainContent_skill-container">
+                            <img src="../static/images/rest.png" class="MainContent_skills-img">
+                            <p class="MainContent_sub-text">REST</p>
+                        </div>
+                    </div>
+            </div>
+
+        </main>
+    </div>
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- First Popper.js, then Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+
+</body>
+</html>
