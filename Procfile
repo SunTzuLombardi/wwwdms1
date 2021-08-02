@@ -1,1 +1,1 @@
-web: gunicorn dmswww1.app
+web: gunicorn wwwdms1.wsgi
