@@ -1,1 +1,2 @@
-web: gunicorn wwwdms1.create_app
+web: gunicorn -w 3 run:app
+
