@@ -1,1 +1,1 @@
-web: gunicorn wwwdms1.app
+web: gunicorn run.app
