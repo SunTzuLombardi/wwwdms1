@@ -1,4 +1,4 @@
-from flaskblog import create_app
+from wwwdms1 import create_app
 
 app = create_app()
 
